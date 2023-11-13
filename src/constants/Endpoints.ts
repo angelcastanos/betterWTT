@@ -1,5 +1,5 @@
 const Endpoints = {
-    fakeStoreAPI: 'https://fakestoreapi.com/products',
+    dummyJSON: 'https://dummyjson.com/products?limit=20',
 }
 
 Object.freeze(Endpoints);

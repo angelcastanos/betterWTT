@@ -3,12 +3,17 @@ body {
 	font-family: sans-serif;
 	padding: 5px;
 }
-
+.navbar-fixed {
+	position: fixed;
+	width: 100%;
+	top: 0vw;
+	z-index: 2;
+}
 .navbar .btn,
 .navbar-toggler {
 	border: #b9b9b9 1px solid;
 	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
-	margin-right: 50px;
+	margin-right: 60px;
 }
 .cart {
 	background: #fff;
@@ -93,9 +98,9 @@ body {
 	height: 50px;
 	justify-content: center;
 	padding: 4px;
-	position: absolute;
+	position: fixed;
 	right: 8px;
-	top: 8px;
+	top: 5px;
 	transition: all 0.3s ease;
 	width: 50px;
 	z-index: 2;
@@ -134,6 +139,7 @@ body {
 
 .card-grid {
 	display: flex;
+	margin-top: 5vw;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -159,6 +165,11 @@ body {
 	font-size: 1.2rem;
 	font-weight: bold;
 }
+
+.card-title {
+	margin-top: 10px;
+}
+
 /* Skeleton animation*/
 @keyframes scale {
     0% {transform: scale(0.9)}

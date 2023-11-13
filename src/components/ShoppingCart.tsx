@@ -87,7 +87,7 @@ const CartItem = (item: ProductCart) => {
 	return (
 		<li key={item.id}>
 			<div className="cart-item-header">
-				<img src={item.image} alt={item.title} className="img-fluid" />
+				<img src={item.thumbnail} alt={item.title} className="img-fluid" />
         <div className="row">
           <p>{item.title}</p>
           <p>{`$${item.price} USD`}</p>

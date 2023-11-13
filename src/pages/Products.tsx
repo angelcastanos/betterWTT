@@ -31,7 +31,7 @@ export const Products = () => {
 			
 			{error && (
 				<div className="alert alert-danger" role="alert">
-					{error}
+					{`Error al cargar los productos`}
 				</div>
 			)}
 			

@@ -17,11 +17,11 @@ import { Counter } from "./Counter"
  * @returns 
  */
 export const Card = (product: Product) => {
-  console.log(product.image)
+  
   return (
     <div className="card">
       <div className="card-body">      
-        <img src={product.image} alt={product.title} className="img-fluid" />
+        <img src={product.thumbnail} alt={product.title} className="img-fluid" />
         <h3 className="card-title">{product.title}</h3>
         <h3 className="card-subtitle mb-2 text-body-secondary">{`$${product.price}`}</h3>
         <Counter {...product} />

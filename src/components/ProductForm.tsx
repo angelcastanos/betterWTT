@@ -42,15 +42,14 @@ export const ProductForm = () => {
 
 	const onSubmit = handleSubmit(async(data) => {
 
-		const base64Image = await fileToBase64(data.image[0]);
-		console.log(base64Image);
+		const base64Image = await fileToBase64(data.image[0]);	
 		
 		const productToCreate: Product = {
 			...(data as Product),
 			title: data.name,
 			price: Number(data.price),
 			stock: Number(data.stock),
-			image: base64Image as string,
+			thumbnail: base64Image as string,
 		};
 		saveProduct(productToCreate);
 		reset();

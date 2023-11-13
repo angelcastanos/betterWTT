@@ -1,7 +1,7 @@
 
 interface ProductBase {
     id: number;
-    image: string;
+    thumbnail: string;
     price: number;
     title: string;
 }
