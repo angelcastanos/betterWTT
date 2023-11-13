@@ -4,7 +4,20 @@
     "skipLibCheck": true,
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./src",
+		"paths": {
+			"@chat/*": ["chat/*"],
+			"@constants/*": ["constants/*"],
+			"@controllers/*": ["controllers/*"],
+			"@database/*": ["database/*"],
+			"@helpers/*": ["helpers/*"],
+			"@interfaces/*": ["interfaces/*"],
+			"@routes/*": ["routes/*"],
+			"@services/*": ["services/*"],
+			"@types/*": ["types/*"],
+			"@utils/*": ["utils/*"],
+		}
   },
   "include": ["vite.config.ts"]
 }
